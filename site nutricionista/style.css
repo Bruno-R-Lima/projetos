@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;1,300;1,400;1,500 &família= Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sem serifa;
+    color:#c3e575 ;
+}
+:root{
+    --primaria: #f3faea
+    --segundaria:#c3e575
+    --terciaria:   
+}
+html, body{
+    height: 100%;
+    background-color: #f3faea;
+  
+}
+
+/* configuração da nav */
+header{
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 2%; 
+    width: 100%; 
+    background-color:#f3faea ; 
+    border-bottom: 2px solid green;
+    
+}
+
+.logo img{
+    height: 150px;
+    width: 200px;
+}
+
+.navegação ul{
+   
+}
+.navegação li{
+    
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+ 
+    
+}
+.navegação a{
+    text-decoration: none;
+    font-weight: 700;
+    color:#c3e575 ;
+}
+.navegação a:hover {
+    color: black;
+    font-size: 22px;
+}
+/* iniciando redesociais */
+.numero{
+    display: flex;
+    background-color: #e6f5d2;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    color: green;
+    font-size: 20px;
+    margin-top: 150px;
+    height: 100px;
+    border-bottom: 2px solid green;
+    
+}
+.red{
+    display: flex;
+    gap: 40px;
+    margin: 0 7%;
+}
+.cont{
+    margin-left: 7%;
+}
+.redesocial{
+    /* height: 30px; */
+    width: 30px;
+}
+.redesocial:hover{
+    height: 40px;
+    width: 40px;
+}
+
+/* adiciona o banner */
+
+.banner{
+    height: 92vh;
+    width: 100%;
+    background-image: url(imagens/nutricionista-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;
+    border-bottom: 2px solid green;
+}
+
+/* configuração da sessão sobre nós */
+
+.sobre{
+    height: auto;
+    width: 100%;
+    background-color: #c3e575;
+    padding: 6%;
+    border-bottom: 2px solid green;
+}
+.sobre h2 a{
+    color:#f3faea;
+    width: 60%;
+}
+.sobre p{
+    color: #f3faea;
+    width: 60%;
+    margin-top: 20px;
+}
+/* inicio da configuração do formulário */
+.formulario{
+    width: 60%;
+    margin: 50px auto;
+    border-bottom: 2px solid green;
+}
+.formulario h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.formulario p{
+    text-align: center;
+}
+.formulario input{
+    display: block;
+    margin: 10px auto;
+    width: 40%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid green;
+    color: #c3e575;
+}
+.formulario button{
+    display:block ;
+    margin: 30px auto;
+    width: 90px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* iniciando a configuração do cards */
+.container{
+    width: 100%;
+    text-align: center;
+    background-color: #c3e575;
+    padding-bottom: 20px;
+}
+.container h3{
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.container a{
+    color: green;
+}
+.dicas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width:250px;
+    height: 300px;
+    box-shadow: 1px 1px 2px 4px;
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+footer p{
+    color:green;
+}
+@media screen and (max-width:950px){
+ .dicas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+ }
+ .formulario input{
+    width: 70%;
+}
+
+}
+@media screen and (max-width:700px){
+    nav{
+        flex-direction: column;
+        position: static;
+        padding-bottom: 10px;
+    }
+    .numero{
+        margin-top: 0;
+    }
+    .formulario input{
+        width: 80%;
+    }
+    .dicas{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
