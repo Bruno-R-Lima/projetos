@@ -1,0 +1,92 @@
+html, body{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: gray;
+}
+
+form{
+    width: 96%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(220, 216, 216);
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+
+form fieldset{
+    padding: 0 40px;
+    border: 3px solid #ccc ;
+    border: none;
+    
+}
+
+form legend{
+    padding: 0 20px;
+    font-size: 30px;
+    color: gray;
+    text-align: left;
+}
+
+.txt{
+    display: inline-block;
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px  13px;
+    /* margin:15px 0; */
+}
+
+.txt:focus{
+    outline: 0;
+}
+
+form select{
+    width: 80%;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px;
+    /* text-align: center; */
+    /* font-size: large; */
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+    border: 1px solid #ccc;
+}
+h2{
+    margin-top: 20px;
+}
+
+.input-radio{
+   margin-top: 20px;
+   text-align: left;
+   display: inline-block;
+}
+.input-radio label{
+    margin-left: 13px;
+    font-size: 16px;
+    color: rgb(130, 130, 130);
+}
+button{
+    margin-top: 20px;
+    width: 140px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+    border: 2px solid rgb(130, 130, 130);
+    margin-bottom: 10px;
+}
+
+textarea{
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px 13px;
+    resize: vertical;
+}

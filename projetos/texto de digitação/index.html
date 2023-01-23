@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitação</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0a0c21;
+        }
+        p{
+            width: 90%;
+            color: cyan;
+            font-size: xx-large;
+            white-space: pre-wrap;
+
+        }
+
+    </style>
+</head>
+<body>
+    <p>Texto de Digitação com javascript em um formato muito vérsatil e organizado!</p>
+    <script>
+        var paragrafo= document.querySelector('p');
+        var texto= paragrafo.innerHTML;
+        var index= 0;
+
+        const escrever = ()=>{
+            paragrafo.innerHTML= paragrafo.innerHTML.replace('|', '')
+            if(texto.length > index){
+                if(index == 0){
+                    paragrafo.innerHTML= texto.charAt(index)
+                }else{
+                    paragrafo.innerHTML+=texto.charAt(index)
+                }
+                paragrafo.innerHTML+= "|"
+                index++
+                setTimeout(escrever, 50)
+            }
+        }
+        escrever()
+    </script>
+</body>
+</html>

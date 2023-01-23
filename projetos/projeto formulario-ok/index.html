@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>meu furmulario</legend>
+            <div><input class="txt" type="text" name="nome" placeholder="digite seu nome" id=""></div>
+            <div><input class="txt" type="email" name="email" placeholder="digite seu email" id=""></div>
+            <div>
+                <select class="select" name="lista" id="">
+                    <option value="" selected disabled>Qual sua idade?</option>
+                    <option value="18">18+</option>
+                    <option value="28">28+</option>
+                    <option value="48">48+</option>
+                </select>
+            </div>
+            <h2> Qual a sua Cidade</h2>
+            <div class="input-radio">
+                <div class="radio">
+                
+                    <input type="radio" value="florianopolis" id="flor" name="cidades">
+                    <label for="flor">florianopolis</label>
+                </div>
+                <div class="radio">
+                
+                    <input type="radio" value="São Paulo" id="sp" name="cidades">
+                    <label for="sp">São Paulo</label>
+                </div>
+                <div class="radio">
+                
+                    <input type="radio" value="Rio de Janeiro" id="rj" name="cidades">
+                    <label  for="rj">Rio de Janeiro</label>
+                </div>
+            </div>
+            
+            <h2> O que você gosta de comer</h2>
+            <div class="input-radio">
+                <div class="radio">
+                
+                    <input type="checkbox" value="frutas" id="f" name="comida[]">
+                    <label for="f">frutas</label>
+                </div>
+                <div class="radio">
+                
+                    <input type="checkbox" value="carne" id="s" name="comida[]">
+                    <label for="s">carne</label>
+                </div>
+                <div class="radio">
+                
+                    <input type="checkbox" value="verduras" id="r" name="comida[]">
+                    <label  for="r">verduras</label>
+                </div>
+            </div>
+            <div>
+                <textarea name="obsevação" id="" cols="" rows="" placeholder="digite alguma duvida!"></textarea>
+            </div>
+            <div>
+                <button type="submit" value="enviar">enviar</button>
+            </div>
+           
+            
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

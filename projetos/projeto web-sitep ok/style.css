@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #212343;
+    align-items: center;
+}
+header img{
+    margin-left: 3%;
+  
+}
+.bane{
+    display: flex;
+    background-image: url(imagens/header_bg.png);
+    background-size: cover;
+    justify-content: space-between;
+}
+.cente{
+    margin-right: 5%;
+}
+
+.form{
+    padding: 10px;
+    width: 400px;
+    /* margin-right: 5%; */
+    height: calc(100% + 30px);
+    background-color:white;
+    position: relative;
+    top: -15px;
+    border: 8px solid #ccc;
+}
+.form h2{
+    font-weight: normal;
+    color: #999999;
+    font-size: 20px;
+}
+
+form > label{
+    display: inline-block;
+    width: 100%;
+    color: #bbbbbb;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+
+}
+
+form > input{
+   width: 300px;
+   height: 50px;
+   border: 3px solid #ccc; 
+}
+button{
+    color: white;
+    background-color: #212343;
+    font-size: 25px;
+    width: 288px;
+    margin-top: 20px;
+    margin-left: 10%;
+    border: 0;
+    height: 56px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.list{
+    /* float: left; */
+    width: 30%;
+    height: 270px;
+    background-color: rgba(33, 35, 67, 0.7);
+    margin-top: 40px;
+    margin-left: 10%;
+    padding: 50px;
+}
+
+.lis {
+    list-style-position: inside;
+}
+.lis li{
+    color: white;
+    margin-top: 15px;
+}
+.txt{
+    padding: 40px;
+    text-align: center;
+    background-color: #dddddd;
+    
+}
+.txt H2{
+    font-weight: normal;
+}
+.txt p{
+    margin-top: 10px;
+    width: 50%;
+    display: inline-block;
+    text-align: justify;
+}
+.arrow{
+    height: 40px;
+    width: 40px;
+    background-image: url(imagens/arrow.png);
+    /* background-position: cover; */
+    background-size: 100% 100%;
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -20px;
+}
+.section h2{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.fotos{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.tex p{
+    text-align: justify;
+}
+.fotos{
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+    color: #999999;
+    border-top: 4px solid #212343;
+    padding: 30px;
+    
+}
+footer p{
+    margin: 5px 0;
+}
+
+@media screen and (max-width:820px){
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .bane {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .list{
+        width: 50%;
+        margin-right:15% ;
+    }
+    
+    .fotos{
+        width: 100%;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+   
+}
+   
